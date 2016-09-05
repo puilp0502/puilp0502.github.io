@@ -1,12 +1,12 @@
 echo "#### Installing setuptools... ####"
-wget https://bootstrap.pypa.io/ez_setup.py -O - | sudo python > /dev/null
+wget https://bootstrap.pypa.io/ez_setup.py -q -O - | sudo python > /dev/null
 if [[ ! $? ]]; then
 	echo "Failed!"
 	exit 1
 fi
 
 echo "#### Installing pip... ####"
-wget https://bootstrap.pypa.io/get-pip.py -O - | sudo python > /dev/null
+wget https://bootstrap.pypa.io/get-pip.py -q -O - | sudo python > /dev/null
 if [[ ! $? ]]; then
 	echo "Failed!"
 	exit 1
